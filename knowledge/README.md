@@ -12,6 +12,7 @@ In practice, "self-learning" here means **self-updating on request**: the skill 
 | [sources.md](sources.md) | Compact index of provider source registries |
 | [sources/openai.md](sources/openai.md) | Official and community OpenAI documentation sources |
 | [sources/google.md](sources/google.md) | Official and community Google documentation sources |
+| [maintenance-requests.md](maintenance-requests.md) | Reusable self-learning request patterns and expected maintenance workflow |
 
 ## Workflow
 
