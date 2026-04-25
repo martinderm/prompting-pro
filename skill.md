@@ -13,7 +13,7 @@ The skill can also operate in a lightweight maintenance mode: on request, it can
 
 ## Usage
 
-1. **Identify the target or active model** (e.g. `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `nano-banana`).
+1. **Identify the target or active model** (e.g. `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `gemini-3*`).
 2. **Read the relevant docs and tips** for that model (official reference doc, community tips) from supported models. If model is missing inform user.
 3. **Check specialized overlays** and add matching overlays for the task type.
 4. **Formulate the prompt** with model-specific constraints, output format, and stop rules.
@@ -38,7 +38,7 @@ Use these as additional instruction layers for specific task classes.
 | Overlay | Applies to | Use when | Reference Doc | Tips |
 |---------|------------|----------|---------------|------|
 | OpenAI Codex Overlay | `gpt-5.5`, `gpt-5.4`, `gpt-5.4-mini`, `gpt-5.4-nano`, `gpt-5.3-codex` | coding, debugging, verification-heavy tasks | Model-specific docs from Supported Models | [tips/openai/codex.md](tips/openai/codex.md) |
-| Nano Banana Image Overlay | `nano-banana` | image generation or editing tasks | [docs/google/nano-banana.md](docs/google/nano-banana.md) | [tips/google/nano-banana.md](tips/google/nano-banana.md) |
+| Nano Banana Image Overlay | `gemini-3*` (via Nano Banana image capability) | image generation or editing tasks | [docs/google/nano-banana.md](docs/google/nano-banana.md) | [tips/google/nano-banana.md](tips/google/nano-banana.md) |
 
 ### Mini variants
 
