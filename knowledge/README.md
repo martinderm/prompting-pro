@@ -3,6 +3,8 @@
 The `knowledge/` directory is the **central repository of documentation sources** for prompting-pro.  
 Its purpose is to make the skill *self-learning*: as official documentation is updated or new models are released, contributors record the change here so that model reference docs (`docs/`) and tips (`tips/`) can be kept in sync.
 
+In practice, "self-learning" here means **self-updating on request**: the skill can be asked to revisit registered sources, detect new models or changed guidance, classify findings as official or community, and propagate the changes into the right repository files.
+
 ## Files
 
 | File | Purpose |
@@ -13,6 +15,17 @@ Its purpose is to make the skill *self-learning*: as official documentation is u
 
 ## Workflow
 
+### On-request discovery and refresh
+
+When asked to check a provider for changes, use this workflow:
+
+1. Revisit the URLs listed in `knowledge/sources/<provider>.md`.
+2. Check whether new official model pages, new prompt-guidance pages, or new relevant community sources have appeared.
+3. Determine whether each finding affects `docs/`, `tips/`, or only the source registry.
+4. Update `Last checked`, status, and affected repository files.
+5. If a newly discovered official model should be tracked, create a new `docs/<provider>/<model>.md` file and register it.
+6. If a newly discovered community source adds actionable prompting advice, wire it into the relevant `tips/` file and keep the source registry in sync.
+
 ### Adding a new documentation source
 
 1. Add or update the provider file at `knowledge/sources/<provider>.md` with:
@@ -22,6 +35,14 @@ Its purpose is to make the skill *self-learning*: as official documentation is u
 2. If this is a new provider, add one row in [sources.md](sources.md) pointing to that file.
 3. Create or update the corresponding file in `docs/<provider>/<model>.md`.
 4. Open a pull request — the PR description should quote the key changes in the source.
+
+### Typical maintenance requests
+
+- `Check OpenAI for new models.`
+- `Refresh Google sources older than 90 days.`
+- `Compare Nano Banana sources with current docs.`
+- `Evaluate this blog post as a community tip.`
+- `Create docs for a newly discovered official model.`
 
 ### Updating an existing source
 
@@ -40,4 +61,5 @@ A maintainer should then update or archive the corresponding docs file.
 - Provider source files in `knowledge/sources/<provider>.md` are the source registry of truth and may contain both `Official Sources` and `Community Sources` sections.
 - Only **official** provider documentation should drive `docs/`.
 - Community tips, blog posts, and experimental techniques should drive `tips/`, even when their URLs are tracked in `knowledge/sources/<provider>.md`.
+- Discovery should be explicit and user-triggered; this repository does not assume background automation.
 - Keep [sources.md](sources.md) as a compact index and provider files as the detailed source of truth.
