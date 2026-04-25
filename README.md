@@ -27,9 +27,9 @@ tips/               ← unofficial / community tips
 
 ## Contributing
 
-- **New model docs**: add a file to `docs/<provider>/<model>.md` and register its source in `knowledge/sources.md`.
+- **New model docs**: add a file to `docs/<provider>/<model>.md` and register its source in `knowledge/sources/<provider>.md` (plus `knowledge/sources.md` index for new providers).
 - **Tips**: add to the appropriate file in `tips/`, following the guide in [tips/README.md](tips/README.md).
-- **Knowledge updates**: when official docs change, update `knowledge/sources.md` and the corresponding `docs/` file.
+- **Knowledge updates**: when official docs change, update `knowledge/sources/<provider>.md` and the corresponding `docs/` file.
 
 ## License
 
