@@ -15,6 +15,7 @@ This file tracks official OpenAI documentation sources used by prompting-pro.
 | OpenAI | GPT-5.4 — Model overview | <https://developers.openai.com/api/docs/models/gpt-5.4> | 2026-04 | 2026-04 | active |
 | OpenAI | GPT-5.3-Codex — Model overview | <https://developers.openai.com/api/docs/models/gpt-5.3-codex> | 2026-04 | 2026-04 | active |
 | OpenAI | Model catalog (variants incl. mini/nano) | <https://developers.openai.com/api/docs/models> | 2026-04 | 2026-04 | active |
+| OpenAI | Prompt guidance (model-specific) | <https://developers.openai.com/api/docs/guides/prompt-guidance> | 2026-04 | 2026-04 | active |
 | OpenAI | Prompt guidance (general) | <https://developers.openai.com/api/docs/guides/prompt-engineering> | 2026-04 | 2026-04 | active |
 | OpenAI | Reasoning guide | <https://developers.openai.com/api/docs/guides/reasoning> | 2026-04 | 2026-04 | active |
 | OpenAI | Function calling | <https://developers.openai.com/api/docs/guides/function-calling> | 2026-04 | 2026-04 | active |

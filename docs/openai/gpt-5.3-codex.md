@@ -4,7 +4,7 @@
 |-------|-------|
 | **Model** | `gpt-5.3-codex` |
 | **Provider** | OpenAI |
-| **Source** | [OpenAI model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex), [Codex prompting guide](https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide), [Reasoning guide](https://developers.openai.com/api/docs/guides/reasoning) |
+| **Source** | [OpenAI model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex), [Prompt guidance](https://developers.openai.com/api/docs/guides/prompt-guidance), [Codex prompting guide](https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide), [Reasoning guide](https://developers.openai.com/api/docs/guides/reasoning) |
 | **Last reviewed** | 2026-04 |
 
 ---
@@ -43,7 +43,19 @@
 - Request minimal corrective patches per iteration.
 - Re-check against the same acceptance criteria each round.
 
-### 4. Balance effort with scope
+### 4. Add explicit stopping conditions
+
+- Stop when the core request is satisfied with evidence from code/tests.
+- If blocked, ask for the smallest missing input or permission.
+- Do not continue looping only for stylistic improvements unless requested.
+
+### 5. Prompt the model to check its work
+
+- Require concrete validation commands (targeted tests, lint/type checks, build).
+- Require explicit handling when validation cannot run.
+- Include failure behavior and open questions in implementation plans.
+
+### 6. Balance effort with scope
 
 - `medium` for most coding tasks.
 - `high/xhigh` for deep debugging, security review, or architecture-heavy refactors.
@@ -69,6 +81,7 @@ Deliverables:
 1. <patch plan>
 2. <implementation>
 3. <verification>
+4. <what remains / blockers>
 ```
 
 ---

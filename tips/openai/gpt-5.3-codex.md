@@ -18,6 +18,10 @@ First request root-cause hypotheses with evidence. Then request implementation.
 
 Always ask for concrete verification steps (tests, lint, build) and final pass/fail status.
 
+### Add stop and fallback conditions
+
+Ask the model to stop after the first correct, validated fix and report blockers if it cannot complete.
+
 ---
 
 ## Prompt Skeleton for Agentic Tasks
@@ -33,7 +37,10 @@ Constraints:
 
 Verification:
 - run <tests>
+- run <lint/type checks>
+- run <build if relevant>
 - report failures with file paths
+- if checks cannot run, explain why and propose next-best check
 ```
 
 ---

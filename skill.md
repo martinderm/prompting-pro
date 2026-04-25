@@ -1,4 +1,9 @@
-# prompting-pro skill
+---
+name: prompting-pro
+description: Help formulate high-quality prompts for GPT-5.5, GPT-5.4, and GPT-5.3-Codex.
+---
+
+# Prompting Pro
 
 ## Purpose
 
@@ -25,6 +30,33 @@ Help formulate high-quality prompts for specific AI models based on official doc
 - Use them for cost/latency-sensitive routing and keep prompt shape compatible with GPT-5.4 guidance.
 
 General tips that apply across all models: [tips/general.md](tips/general.md)
+
+## Suggested Prompt Structure
+
+Use this compact structure for complex prompts, then specialize by model:
+
+```text
+Role: <1-2 sentence role definition>
+
+# Personality
+<tone and collaboration style>
+
+# Goal
+<target outcome>
+
+# Success criteria
+<what must be true before final answer>
+
+# Constraints
+- <policy / safety / business limits>
+- <evidence and tool limits>
+
+# Output
+<format, length, audience>
+
+# Stop rules
+<when to continue, ask, fallback, or stop>
+```
 
 ## Adding a New Model
 

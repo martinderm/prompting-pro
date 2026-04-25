@@ -18,6 +18,10 @@ Prefer a short `Constraints` block over long narrative instructions. This improv
 
 For long-running jobs, ask for milestone updates (diagnosis, implementation, verification) before final output.
 
+### Separate personality from task rules
+
+Keep a short personality block for tone and a separate collaboration block for behavior (questions vs assumptions, proactivity, uncertainty handling).
+
 ---
 
 ## Reasoning Effort Heuristics
@@ -42,6 +46,14 @@ When using function/tool calls, strict schemas reduce invalid calls and improve 
 ### Include error payloads verbatim in retries
 
 If a tool call fails validation, pass the exact error in the next turn and request a corrected output only.
+
+### Add a retrieval budget for grounded tasks
+
+Define when another search is allowed and when to stop and answer. This reduces endless retrieval loops.
+
+### Use short preambles in tool-heavy workflows
+
+In streaming UX, ask for a one- to two-sentence status preamble before tool calls.
 
 ---
 
