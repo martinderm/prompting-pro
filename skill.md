@@ -48,13 +48,6 @@ Use these as additional instruction layers for specific task classes.
 
 General tips that apply across all models: [tips/general.md](tips/general.md)
 
-## Adding a New Model
-
-1. Add a reference doc in `docs/<provider>/<model>.md` (official guidance only).
-2. Optionally add tips in `tips/<provider>/<model>.md` (unofficial / community tips).
-3. Register the official documentation source in `knowledge/sources/<provider>.md` (and in [knowledge/sources.md](knowledge/sources.md) only if it is a new provider).
-4. Add a row to the table above.
-
 ## Repository Layout
 
 ```
