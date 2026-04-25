@@ -1,6 +1,6 @@
 ---
 name: prompting-pro
-description: Help formulate high-quality prompts for GPT-5.5, GPT-5.4, and GPT-5.3-Codex.
+description: Help formulate high-quality prompts for GPT-5.5, GPT-5.4, GPT-5.3-Codex, Gemini 3, and Nano Banana.
 ---
 
 # Prompting Pro
@@ -11,7 +11,7 @@ Help formulate high-quality prompts for specific AI models based on official doc
 
 ## Usage
 
-1. **Identify the target model** (e.g. `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`).
+1. **Identify the target model** (e.g. `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `nano-banana`).
 2. **Describe your task** — what you want the model to do.
 3. The skill applies model-specific guidance and returns an optimised prompt.
 
@@ -22,6 +22,8 @@ Help formulate high-quality prompts for specific AI models based on official doc
 | GPT-5.5 | [docs/openai/gpt-5.5.md](docs/openai/gpt-5.5.md) | [tips/openai/gpt-5.5.md](tips/openai/gpt-5.5.md) |
 | GPT-5.4 | [docs/openai/gpt-5.4.md](docs/openai/gpt-5.4.md) | [tips/openai/gpt-5.4.md](tips/openai/gpt-5.4.md) |
 | GPT-5.3-Codex | [docs/openai/gpt-5.3-codex.md](docs/openai/gpt-5.3-codex.md) | [tips/openai/gpt-5.3-codex.md](tips/openai/gpt-5.3-codex.md) |
+| Gemini 3 | [docs/google/gemini-3.md](docs/google/gemini-3.md) | - |
+| Nano Banana | [docs/google/nano-banana.md](docs/google/nano-banana.md) | - |
 
 ### Mini variants
 

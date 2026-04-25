@@ -15,6 +15,9 @@ docs/               ← official prompt-guidance per model/version
     gpt-5.5.md       ← GPT-5.5 official guidance
     gpt-5.4.md       ← GPT-5.4 official guidance
     gpt-5.3-codex.md ← GPT-5.3-Codex official guidance
+  google/
+    gemini-3.md      ← Gemini 3 family official guidance
+    nano-banana.md   ← Nano Banana official guidance
 knowledge/          ← central registry of documentation sources (self-learning)
   sources.md        ← all tracked official docs with status & last-checked date
 tips/               ← unofficial / community tips

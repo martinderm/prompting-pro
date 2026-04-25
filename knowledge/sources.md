@@ -8,6 +8,7 @@ Store detailed source rows in `knowledge/sources/<provider>.md`.
 | Provider | Registry file | Last checked |
 |----------|---------------|--------------|
 | OpenAI | [sources/openai.md](sources/openai.md) | 2026-04 |
+| Google | [sources/google.md](sources/google.md) | 2026-04 |
 
 ## Notes
 
