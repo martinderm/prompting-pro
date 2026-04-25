@@ -34,6 +34,7 @@ Use these compact references when citing community input in docs and tips.
 | [4] | Function-calling patterns in production | <https://martinfowler.com/articles/function-call-LLM.html> | 2026-04 | 2026-04 | active |
 | [5] | LLM product/system patterns | <https://eugeneyan.com/writing/llm-patterns/> | 2026-04 | 2026-04 | active |
 | [7] | Ongoing practitioner observations | <https://simonwillison.net/tags/prompt-engineering/> | 2026-04 | 2026-04 | active |
+| [8] | Codex custom-instructions pattern (plain-language reporting + self-verification) | <https://x.com/mattshumer_/status/2033952179354996868?s=46> | 2026-04 | 2026-04 | active |
 
 ## Notes
 

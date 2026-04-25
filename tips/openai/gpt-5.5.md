@@ -81,6 +81,12 @@ In streaming UX, ask for a one- to two-sentence status preamble before tool call
 
 ---
 
+## Shared Coding Overlay
+
+For coding tasks with GPT-5.5, also apply: [codex.md](codex.md).
+
+---
+
 ## Known Quirks
 
 Sources: [7]

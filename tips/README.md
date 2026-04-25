@@ -9,6 +9,7 @@ tips/
 ├── README.md            ← this file
 ├── general.md           ← tips that work well across all models
 ├── openai/
+│   ├── codex.md          ← shared coding overlay for OpenAI coding models
 │   ├── gpt-5.5.md       ← GPT-5.5-specific tips
 │   ├── gpt-5.4.md       ← GPT-5.4-specific tips (incl. mini/nano notes)
 │   └── gpt-5.3-codex.md ← GPT-5.3-Codex-specific tips
@@ -25,6 +26,16 @@ Add a new `<provider>/` sub-directory when tips for a different provider are con
 | Applies to all models | `tips/general.md` |
 | Specific to one model / version | `tips/<provider>/<model>.md` |
 | Specific to one provider but all their models | `tips/<provider>/general.md` |
+| Shared provider overlays (task class) | `tips/<provider>/<overlay>.md` |
+
+## Overlay Registry
+
+Use this list to quickly identify additional overlays that should be combined with model-specific tips.
+
+| Overlay | Scope | Typical trigger | Reference Doc | Tips |
+|---------|-------|-----------------|---------------|------|
+| OpenAI Codex Overlay | OpenAI coding models | coding, debugging, verification loops | model-specific OpenAI docs | [openai/codex.md](openai/codex.md) |
+| Nano Banana Image Overlay | `nano-banana` | image generation or editing | [../docs/google/nano-banana.md](../docs/google/nano-banana.md) | [google/nano-banana.md](google/nano-banana.md) |
 
 ## Contributing a Tip
 

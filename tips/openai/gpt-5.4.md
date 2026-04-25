@@ -60,4 +60,10 @@ Grounding:
 
 ---
 
+## Shared Coding Overlay
+
+For coding tasks with the GPT-5.4 family, also apply: [codex.md](codex.md).
+
+---
+
 Community source index: [knowledge/sources/openai.md](../../knowledge/sources/openai.md#community-sources)

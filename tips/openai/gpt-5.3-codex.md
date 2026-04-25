@@ -72,4 +72,10 @@ If you need a lower-cost helper stage, run inventory/classification with `gpt-5.
 
 ---
 
+## Shared Coding Overlay
+
+For coding tasks, also apply the shared overlay: [codex.md](codex.md).
+
+---
+
 Community source index: [knowledge/sources/openai.md](../../knowledge/sources/openai.md#community-sources)
