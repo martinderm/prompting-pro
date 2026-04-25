@@ -23,7 +23,7 @@ Help formulate high-quality prompts for specific AI models based on official doc
 | GPT-5.4 | [docs/openai/gpt-5.4.md](docs/openai/gpt-5.4.md) | [tips/openai/gpt-5.4.md](tips/openai/gpt-5.4.md) |
 | GPT-5.3-Codex | [docs/openai/gpt-5.3-codex.md](docs/openai/gpt-5.3-codex.md) | [tips/openai/gpt-5.3-codex.md](tips/openai/gpt-5.3-codex.md) |
 | Gemini 3 | [docs/google/gemini-3.md](docs/google/gemini-3.md) | - |
-| Nano Banana | [docs/google/nano-banana.md](docs/google/nano-banana.md) | - |
+| Nano Banana | [docs/google/nano-banana.md](docs/google/nano-banana.md) | [tips/google/nano-banana.md](tips/google/nano-banana.md) |
 
 ### Mini variants
 

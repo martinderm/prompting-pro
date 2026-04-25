@@ -26,6 +26,8 @@ tips/               ← unofficial / community tips
     gpt-5.5.md       ← GPT-5.5 community tips
     gpt-5.4.md       ← GPT-5.4 family community tips (incl. mini/nano notes)
     gpt-5.3-codex.md ← GPT-5.3-Codex community tips
+  google/
+    nano-banana.md   ← Nano Banana community tips
 ```
 
 ## Contributing

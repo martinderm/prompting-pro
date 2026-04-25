@@ -8,7 +8,8 @@ Its purpose is to make the skill *self-learning*: as official documentation is u
 | File | Purpose |
 |------|---------|
 | [sources.md](sources.md) | Compact index of provider source registries |
-| [sources/openai.md](sources/openai.md) | Official OpenAI documentation sources |
+| [sources/openai.md](sources/openai.md) | Official and community OpenAI documentation sources |
+| [sources/google.md](sources/google.md) | Official and community Google documentation sources |
 
 ## Workflow
 
@@ -16,6 +17,8 @@ Its purpose is to make the skill *self-learning*: as official documentation is u
 
 1. Add or update the provider file at `knowledge/sources/<provider>.md` with:
    - Provider, model/scope, URL, date first added, status (`active` / `outdated` / `archived`).
+   - Place official reference docs under an `Official Sources` section.
+   - Place blog posts or other non-reference inputs used for `tips/` under a separate `Community Sources` section.
 2. If this is a new provider, add one row in [sources.md](sources.md) pointing to that file.
 3. Create or update the corresponding file in `docs/<provider>/<model>.md`.
 4. Open a pull request — the PR description should quote the key changes in the source.
@@ -24,8 +27,8 @@ Its purpose is to make the skill *self-learning*: as official documentation is u
 
 1. Visit the URL in the relevant provider file under `knowledge/sources/` and note what changed.
 2. Update the `Last checked` date and status in that provider file.
-3. Update the corresponding `docs/` file.
-4. If the change is significant, add a `> ⚠️ Changed in <date>: <summary>` callout at the top of the docs file.
+3. Update the corresponding `docs/` file for official-source changes, or the corresponding `tips/` file for community-source changes.
+4. If the change is significant, add a `> ⚠️ Changed in <date>: <summary>` callout at the top of the affected docs file when appropriate.
 
 ### Marking a source as outdated
 
@@ -34,6 +37,7 @@ A maintainer should then update or archive the corresponding docs file.
 
 ## Principles
 
-- Only **official** provider documentation goes in `knowledge/sources/<provider>.md` and `docs/`.
-- Community tips, blog posts, and experimental techniques go in `tips/` instead.
+- Provider source files in `knowledge/sources/<provider>.md` are the source registry of truth and may contain both `Official Sources` and `Community Sources` sections.
+- Only **official** provider documentation should drive `docs/`.
+- Community tips, blog posts, and experimental techniques should drive `tips/`, even when their URLs are tracked in `knowledge/sources/<provider>.md`.
 - Keep [sources.md](sources.md) as a compact index and provider files as the detailed source of truth.

@@ -8,10 +8,12 @@ The `tips/` directory collects **unofficial** prompting tips: community best-pra
 tips/
 ├── README.md            ← this file
 ├── general.md           ← tips that work well across all models
-└── openai/
-    ├── gpt-5.5.md       ← GPT-5.5-specific tips
-    ├── gpt-5.4.md       ← GPT-5.4-specific tips (incl. mini/nano notes)
-    └── gpt-5.3-codex.md ← GPT-5.3-Codex-specific tips
+├── openai/
+│   ├── gpt-5.5.md       ← GPT-5.5-specific tips
+│   ├── gpt-5.4.md       ← GPT-5.4-specific tips (incl. mini/nano notes)
+│   └── gpt-5.3-codex.md ← GPT-5.3-Codex-specific tips
+└── google/
+    └── nano-banana.md   ← Nano Banana-specific tips
 ```
 
 Add a new `<provider>/` sub-directory when tips for a different provider are contributed.
