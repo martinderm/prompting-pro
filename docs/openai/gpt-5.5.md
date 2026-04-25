@@ -79,22 +79,6 @@
 
 ---
 
-## Official Grounding (Double-Check)
-
-| Claim area | Official evidence | Status |
-|-----------|-------------------|--------|
-| Reasoning effort set and default | Model page + reasoning guide confirm `none`, `low`, `medium` (default), `high`, `xhigh` for `gpt-5.5`. | Confirmed |
-| Outcome-first prompting + stop rules | Prompt guidance (`GPT-5.5 prompting guide`, `Outcome-first prompts and stopping conditions`). | Confirmed |
-| Preambles + `phase` handling | Prompt guidance (`Improve time to first visible token with a preamble`, `Phase parameter`) + reasoning guide (`phase` parameter section). | Confirmed |
-| Retrieval/citation budgeting | Prompt guidance (`Grounding, citations, and retrieval budgets`). | Confirmed |
-| Validation/check-your-work | Prompt guidance (`Prompt the model to check its work`) + reasoning guide (`incomplete` handling under token limits). | Confirmed |
-
-Adjustments applied in this pass:
-
-- Clarified tool-loop guidance to include continuity of assistant/reasoning state during replay workflows.
-
----
-
 ## Prompt Template
 
 ```text
