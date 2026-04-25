@@ -41,7 +41,7 @@
 
 - Provide compile/test failures as structured feedback.
 - Request minimal corrective patches per iteration.
-- Re-check against the same acceptance criteria each round.
+- Re-check against the same acceptance criteria each round until validated or blocked.
 
 ### 4. Add explicit stopping conditions
 
