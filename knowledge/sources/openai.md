@@ -33,7 +33,6 @@ Use these compact references when citing community input in docs and tips.
 | [3] | ReAct techniques | <https://www.promptingguide.ai/techniques/react> | 2026-04 | 2026-04 | active |
 | [4] | Function-calling patterns in production | <https://martinfowler.com/articles/function-call-LLM.html> | 2026-04 | 2026-04 | active |
 | [5] | LLM product/system patterns | <https://eugeneyan.com/writing/llm-patterns/> | 2026-04 | 2026-04 | active |
-| [6] | Prompt engineering course notes | <https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/> | 2026-04 | 2026-04 | active |
 | [7] | Ongoing practitioner observations | <https://simonwillison.net/tags/prompt-engineering/> | 2026-04 | 2026-04 | active |
 
 ## Notes

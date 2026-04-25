@@ -8,6 +8,12 @@ Community tips for `gpt-5.3-codex` in autonomous coding loops.
 
 Sources: [4], [5], [7]
 
+Grounding:
+
+- [4]: Production function-calling guidance supports constrained execution, explicit retries, and fallback handling.
+- [5]: Engineering patterns support minimal-change patches, staged diagnosis, and verification gates.
+- [7]: Practitioner reports reinforce stop conditions and blocker escalation in autonomous loops.
+
 ### Require minimal diffs
 
 Ask for the smallest patch that satisfies acceptance criteria. This lowers regression risk and improves review speed.
@@ -30,6 +36,11 @@ Ask the model to stop after the first correct, validated fix and report blockers
 
 Sources: [4], [5]
 
+Grounding:
+
+- [4]: Motivates explicit tool constraints, bounded actions, and clear failure reporting.
+- [5]: Motivates acceptance checks and observable verification before completion.
+
 ```text
 Goal:
 <what must be fixed>
@@ -51,7 +62,11 @@ Verification:
 
 ## Routing Note
 
-Sources: [6], [7]
+Sources: [7]
+
+Grounding:
+
+- [7]: Practitioner operations commonly use a smaller helper stage before final synthesis.
 
 If you need a lower-cost helper stage, run inventory/classification with `gpt-5.4-mini` and keep final code synthesis in `gpt-5.3-codex`.
 

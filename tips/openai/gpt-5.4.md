@@ -6,7 +6,13 @@ Community tips for `gpt-5.4` with practical notes for `gpt-5.4-mini` and `gpt-5.
 
 ## Model Selection Within Family
 
-Sources: [1], [6], [7]
+Sources: [1], [7]
+
+Grounding:
+
+- [1]: Supports matching prompt complexity and instruction strictness to task demands.
+- [7]: Practitioner comparisons motivate tiered routing across larger and smaller variants.
+- Change applied: Position routing matrix as practical guidance, validated by local evals.
 
 | Variant | Good fit | Escalate when |
 |---------|----------|---------------|
@@ -18,7 +24,12 @@ Sources: [1], [6], [7]
 
 ## Prompting Patterns
 
-Sources: [2], [3], [6]
+Sources: [2], [3]
+
+Grounding:
+
+- [2]: Few-shot technique supports strict output contracts and format-consistent examples.
+- [3]: ReAct decomposition supports two-pass workflows for analysis then synthesis.
 
 ### Keep one explicit output contract
 
@@ -37,6 +48,11 @@ Include checks such as "must compile", "must preserve API", or "must keep output
 ## Cost and Latency
 
 Sources: [5], [7]
+
+Grounding:
+
+- [5]: Highlights cost-performance tradeoffs, preprocessing stages, and selective escalation.
+- [7]: Reinforces aggressive context trimming and throughput-aware model routing.
 
 - Keep stable instructions reusable and concise.
 - Remove irrelevant context aggressively before calls.
