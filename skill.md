@@ -6,7 +6,7 @@ Help formulate high-quality prompts for specific AI models based on official doc
 
 ## Usage
 
-1. **Identify the target model** (e.g. `gpt-4o`, `o1`, `claude-3-5-sonnet`).
+1. **Identify the target model** (e.g. `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`).
 2. **Describe your task** — what you want the model to do.
 3. The skill applies model-specific guidance and returns an optimised prompt.
 
@@ -14,9 +14,15 @@ Help formulate high-quality prompts for specific AI models based on official doc
 
 | Model | Reference Doc | Tips |
 |-------|--------------|------|
-| GPT-4o | [docs/openai/gpt-4o.md](docs/openai/gpt-4o.md) | [tips/openai/gpt-4o.md](tips/openai/gpt-4o.md) |
-| GPT-4 | [docs/openai/gpt-4.md](docs/openai/gpt-4.md) | — |
-| o1 / o1-mini | [docs/openai/o1.md](docs/openai/o1.md) | [tips/openai/o1.md](tips/openai/o1.md) |
+| GPT-5.5 | [docs/openai/gpt-5.5.md](docs/openai/gpt-5.5.md) | [tips/openai/gpt-5.5.md](tips/openai/gpt-5.5.md) |
+| GPT-5.4 | [docs/openai/gpt-5.4.md](docs/openai/gpt-5.4.md) | [tips/openai/gpt-5.4.md](tips/openai/gpt-5.4.md) |
+| GPT-5.3-Codex | [docs/openai/gpt-5.3-codex.md](docs/openai/gpt-5.3-codex.md) | [tips/openai/gpt-5.3-codex.md](tips/openai/gpt-5.3-codex.md) |
+
+### Mini variants
+
+- `gpt-5.4-mini` and `gpt-5.4-nano` are considered operational variants of the GPT-5.4 family.
+- They are not documented as standalone models in this repository.
+- Use them for cost/latency-sensitive routing and keep prompt shape compatible with GPT-5.4 guidance.
 
 General tips that apply across all models: [tips/general.md](tips/general.md)
 

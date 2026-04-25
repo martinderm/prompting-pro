@@ -9,8 +9,9 @@ tips/
 ├── README.md            ← this file
 ├── general.md           ← tips that work well across all models
 └── openai/
-    ├── gpt-4o.md        ← GPT-4o-specific tips
-    └── o1.md            ← o1-series-specific tips
+    ├── gpt-5.5.md       ← GPT-5.5-specific tips
+    ├── gpt-5.4.md       ← GPT-5.4-specific tips (incl. mini/nano notes)
+    └── gpt-5.3-codex.md ← GPT-5.3-Codex-specific tips
 ```
 
 Add a new `<provider>/` sub-directory when tips for a different provider are contributed.
@@ -38,4 +39,5 @@ Add a new `<provider>/` sub-directory when tips for a different provider are con
 
 - Tips are **community knowledge** — they may or may not work for every use-case.
 - If a tip is later validated by official documentation, move it to `docs/` and remove it from `tips/`.
-- Label tips that are known to be model-version-specific (e.g. "Tested on gpt-4o-2024-08-06 only").
+- Label tips that are known to be model-version-specific (e.g. "Tested on gpt-5.4-2026-03-05 only").
+- Keep mini/nano notes under their parent family tip file unless a variant has materially different behavior.

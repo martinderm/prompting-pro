@@ -12,16 +12,17 @@ See [skill.md](skill.md) for usage instructions and a list of supported models.
 skill.md            ← main skill definition (compact)
 docs/               ← official prompt-guidance per model/version
   openai/
-    gpt-4o.md       ← GPT-4o official guidance
-    gpt-4.md        ← GPT-4 official guidance
-    o1.md           ← o1 / o1-mini official guidance
+    gpt-5.5.md       ← GPT-5.5 official guidance
+    gpt-5.4.md       ← GPT-5.4 official guidance
+    gpt-5.3-codex.md ← GPT-5.3-Codex official guidance
 knowledge/          ← central registry of documentation sources (self-learning)
   sources.md        ← all tracked official docs with status & last-checked date
 tips/               ← unofficial / community tips
   general.md        ← model-agnostic tips
   openai/
-    gpt-4o.md       ← GPT-4o community tips
-    o1.md           ← o1-series community tips
+    gpt-5.5.md       ← GPT-5.5 community tips
+    gpt-5.4.md       ← GPT-5.4 family community tips (incl. mini/nano notes)
+    gpt-5.3-codex.md ← GPT-5.3-Codex community tips
 ```
 
 ## Contributing
