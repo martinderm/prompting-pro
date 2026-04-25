@@ -6,6 +6,8 @@ Community tips for `gpt-5.4` with practical notes for `gpt-5.4-mini` and `gpt-5.
 
 ## Model Selection Within Family
 
+Sources: [1], [6], [7]
+
 | Variant | Good fit | Escalate when |
 |---------|----------|---------------|
 | `gpt-5.4` | feature work, robust reasoning, medium/high complexity coding | task becomes mission-critical or very deep reasoning -> try `gpt-5.5` |
@@ -15,6 +17,8 @@ Community tips for `gpt-5.4` with practical notes for `gpt-5.4-mini` and `gpt-5.
 ---
 
 ## Prompting Patterns
+
+Sources: [2], [3], [6]
 
 ### Keep one explicit output contract
 
@@ -32,6 +36,12 @@ Include checks such as "must compile", "must preserve API", or "must keep output
 
 ## Cost and Latency
 
+Sources: [5], [7]
+
 - Keep stable instructions reusable and concise.
 - Remove irrelevant context aggressively before calls.
 - Use mini for high-frequency preprocessing and escalate selectively.
+
+---
+
+Community source index: [knowledge/sources/openai.md](../../knowledge/sources/openai.md#community-sources)

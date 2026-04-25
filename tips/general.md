@@ -6,6 +6,8 @@ Tips in this file are **model-agnostic** — they improve prompts regardless of 
 
 ## Clarity & Structure
 
+Sources: [1], [7]
+
 ### Use XML-style tags for long prompts
 
 Wrapping sections in `<context>`, `<task>`, and `<format>` tags makes the prompt easier to scan for both humans and models.
@@ -42,6 +44,8 @@ Tell the model what you *want* it to do, not only what to avoid.
 
 ## Few-Shot Examples
 
+Sources: [2]
+
 ### Match example format to desired output format
 
 If you want JSON output, your few-shot examples should also be JSON.
@@ -57,6 +61,8 @@ All examples should follow the same template; inconsistent examples confuse the 
 ---
 
 ## Context Management
+
+Sources: [1], [3], [7]
 
 ### Summarise long conversations periodically
 
@@ -77,6 +83,8 @@ State when the model should stop iterating, ask a clarifying question, or provid
 ---
 
 ## Output Control
+
+Sources: [1], [5]
 
 ### Use a "format header" at the top of the system message
 
@@ -104,6 +112,8 @@ For production answers, define target length and formatting density up front (fo
 
 ## Cost & Latency
 
+Sources: [5], [7]
+
 ### Shorten prompts for high-volume applications
 
 Every saved token compounds at scale. Use abbreviations in internal pipelines where readability for humans is not required.
@@ -119,6 +129,8 @@ Route simple requests to a smaller/cheaper model; escalate to a larger model onl
 ---
 
 ## Safety & Reliability
+
+Sources: [4], [5], [7]
 
 ### Anchor the model's persona with explicit constraints
 
@@ -137,3 +149,7 @@ When expecting JSON or a specific schema, validate the response programmatically
 ### Add retrieval budgets for grounded responses
 
 Define when additional retrieval is justified and when current evidence is sufficient to answer.
+
+---
+
+Community source index: [knowledge/sources/openai.md](../knowledge/sources/openai.md#community-sources)

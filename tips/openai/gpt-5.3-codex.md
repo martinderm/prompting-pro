@@ -6,6 +6,8 @@ Community tips for `gpt-5.3-codex` in autonomous coding loops.
 
 ## Coding Workflow Tips
 
+Sources: [4], [5], [7]
+
 ### Require minimal diffs
 
 Ask for the smallest patch that satisfies acceptance criteria. This lowers regression risk and improves review speed.
@@ -25,6 +27,8 @@ Ask the model to stop after the first correct, validated fix and report blockers
 ---
 
 ## Prompt Skeleton for Agentic Tasks
+
+Sources: [4], [5]
 
 ```text
 Goal:
@@ -47,4 +51,10 @@ Verification:
 
 ## Routing Note
 
+Sources: [6], [7]
+
 If you need a lower-cost helper stage, run inventory/classification with `gpt-5.4-mini` and keep final code synthesis in `gpt-5.3-codex`.
+
+---
+
+Community source index: [knowledge/sources/openai.md](../../knowledge/sources/openai.md#community-sources)

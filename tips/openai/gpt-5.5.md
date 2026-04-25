@@ -6,6 +6,8 @@ Community tips for `gpt-5.5` in coding and professional workflows.
 
 ## Prompt Design
 
+Sources: [1], [2], [7]
+
 ### Define done conditions first
 
 `gpt-5.5` performs best when the prompt starts with an explicit definition of done (tests passing, schema valid, policy constraints met).
@@ -26,6 +28,8 @@ Keep a short personality block for tone and a separate collaboration block for b
 
 ## Reasoning Effort Heuristics
 
+Sources: [6], [7]
+
 | Effort | Typical use |
 |--------|-------------|
 | `low` | quick transformations, straightforward edits |
@@ -38,6 +42,8 @@ Tip: Start at `medium`; increase only when your eval set shows clear gains.
 ---
 
 ## Tooling Patterns
+
+Sources: [3], [4], [5], [7]
 
 ### Prefer strict tool schemas
 
@@ -59,5 +65,11 @@ In streaming UX, ask for a one- to two-sentence status preamble before tool call
 
 ## Known Quirks
 
+Sources: [7]
+
 - Can become verbose without explicit output-length constraints.
 - Overly detailed meta-instructions can reduce practical execution quality; keep directives concrete and minimal.
+
+---
+
+Community source index: [knowledge/sources/openai.md](../../knowledge/sources/openai.md#community-sources)
