@@ -4,12 +4,12 @@ An agent skill that helps formulate high-quality prompts for specific AI models,
 
 ## Quick Start
 
-See [skill.md](skill.md) for usage instructions and a list of supported models.
+See [SKILL.md](SKILL.md) for usage instructions and a list of supported models.
 
 ## Repository Layout
 
 ```
-skill.md            ← main skill definition (compact)
+SKILL.md            ← main skill definition (compact)
 docs/               ← official prompt-guidance per model/version
   openai/
     gpt-5.5.md       ← GPT-5.5 official guidance

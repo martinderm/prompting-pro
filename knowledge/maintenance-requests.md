@@ -24,4 +24,4 @@ When a new model is discovered during maintenance:
 2. Optionally add tips in `tips/<provider>/<model>.md` (unofficial / community tips).
 3. Register the official documentation source in `knowledge/sources/<provider>.md`.
 4. Update `knowledge/sources.md` only if this introduces a new provider.
-5. Add the model row to the Supported Models table in `skill.md`.
+5. Add the model row to the Supported Models table in `SKILL.md`.

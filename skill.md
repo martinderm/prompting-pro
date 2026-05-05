@@ -51,7 +51,7 @@ General tips that apply across all models: [tips/general.md](tips/general.md)
 ## Repository Layout
 
 ```
-skill.md            ← this file (kept compact)
+SKILL.md            ← this file (kept compact)
 docs/               ← official model-specific prompt guidance
 knowledge/          ← registry of documentation sources (self-learning)
 tips/               ← unofficial tips, general and model-specific
