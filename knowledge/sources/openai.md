@@ -11,6 +11,7 @@ This file tracks official and community sources used by prompting-pro.
 
 | Provider | Model / Scope | URL | First added | Last checked | Status |
 |----------|--------------|-----|-------------|--------------|--------|
+| OpenAI | GPT-5.6 family - Model and prompt guidance | <https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6> | 2026-08 | 2026-08 | active |
 | OpenAI | GPT-5.5 — Model overview | <https://developers.openai.com/api/docs/models/gpt-5.5> | 2026-04 | 2026-04 | active |
 | OpenAI | GPT-5.4 — Model overview | <https://developers.openai.com/api/docs/models/gpt-5.4> | 2026-04 | 2026-04 | active |
 | OpenAI | GPT-5.3-Codex — Model overview | <https://developers.openai.com/api/docs/models/gpt-5.3-codex> | 2026-04 | 2026-04 | active |

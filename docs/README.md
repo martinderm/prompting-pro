@@ -6,6 +6,7 @@ Each file in this directory contains **official** prompt-guidance for a specific
 
 | Provider | Model / Family | File | Source |
 |----------|---------------|------|--------|
+| OpenAI | GPT-5.6 family | [openai/gpt-5.6.md](openai/gpt-5.6.md) | [GPT-5.6 model guidance](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.6) |
 | OpenAI | GPT-5.5 | [openai/gpt-5.5.md](openai/gpt-5.5.md) | [GPT-5.5 model page](https://developers.openai.com/api/docs/models/gpt-5.5) |
 | OpenAI | GPT-5.4 | [openai/gpt-5.4.md](openai/gpt-5.4.md) | [GPT-5.4 model page](https://developers.openai.com/api/docs/models/gpt-5.4) |
 | OpenAI | GPT-5.3-Codex | [openai/gpt-5.3-codex.md](openai/gpt-5.3-codex.md) | [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex) |
