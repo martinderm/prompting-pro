@@ -5,15 +5,15 @@
 | **Model** | `Gemini 3` family |
 | **Provider** | Google |
 | **Source** | [Gemini 3 guide](https://ai.google.dev/gemini-api/docs/gemini-3), [Prompting strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) |
-| **Last reviewed** | 2026-04 |
+| **Last reviewed** | 2026-09 |
 
 ---
 
 ## Key Characteristics
 
 - Reasoning-first model family for agentic, coding, and multimodal workloads.
-- Main tracked variants include `gemini-3.1-pro-preview`, `gemini-3-flash-preview`, and `gemini-3.1-flash-lite-preview`.
-- Uses `thinking_level` instead of OpenAI-style `reasoning.effort`; defaults are model-dependent and generally tuned for dynamic reasoning.
+- Main tracked variants include `gemini-3.1-pro-preview`, `gemini-3-flash-preview`, `gemini-3.8-flash`, and `gemini-3.1-flash-lite-preview`.
+- Uses `thinking_level` (Low, Medium, High) instead of OpenAI-style `reasoning.effort`; defaults are model-dependent and tuned for dynamic reasoning.
 - Supports long context, built-in tools, structured outputs, multimodal inputs, and multimodal function responses.
 
 ---
@@ -21,7 +21,7 @@
 ## Family Positioning
 
 - `Gemini 3.1 Pro` is the strongest fit for complex reasoning, deeper world knowledge, and demanding multimodal work.
-- `Gemini 3 Flash` aims for Pro-level intelligence with lower latency and lower cost.
+- `Gemini 3 Flash` and `Gemini 3.8 Flash` aim for Pro-level intelligence with lower latency, high throughput, and native thinking levels.
 - `Gemini 3.1 Flash-Lite` is the cost-sensitive option for high-volume workloads.
 - Native image-generation variants are covered separately in [nano-banana.md](nano-banana.md).
 
@@ -77,6 +77,11 @@
 - Use `media_resolution` when image or video detail quality materially affects results.
 - Treat text, images, audio, and video as equal prompt inputs and reference them explicitly when needed.
 
+### 9. Require explicit verification and definition of done
+
+- For critical, coding, or mathematical workflows, instruct the model to establish finishing criteria before execution.
+- Require an active verification step before finalizing output, clearly separating directly confirmed results from unverified parts.
+
 ---
 
 ## Prompt Template
@@ -85,6 +90,11 @@
 <role>
 You are Gemini 3, a specialized assistant for <domain>.
 </role>
+
+<critical_rules>
+- Prioritize factual accuracy over agreement; correct misconceptions clearly.
+- Clearly state uncertainty when information is missing or ambiguous.
+</critical_rules>
 
 <constraints>
 - <constraint 1>
@@ -99,8 +109,12 @@ You are Gemini 3, a specialized assistant for <domain>.
 <specific request>
 </task>
 
+<verification>
+Verify results before reporting. State what was confirmed and note any limitations.
+</verification>
+
 <final_instruction>
-Think carefully, stay grounded in the provided context, and return the requested format.
+Based on the information above, think carefully, stay grounded in the provided context, and return the requested format.
 </final_instruction>
 ```
 
@@ -115,3 +129,4 @@ Think carefully, stay grounded in the provided context, and return the requested
 | Mixing `thinking_level` with `thinking_budget` | Use only one reasoning-control mechanism per request |
 | Missing tool grounding for current facts | Enable Google Search when freshness matters |
 | Dropping thought signatures in replay flows | Preserve and resend signatures exactly when required |
+| Sycophantic agreement or unverified code output | Enforce truth over agreement and mandate a pre-flight verification step |

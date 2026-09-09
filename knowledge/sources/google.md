@@ -23,6 +23,8 @@ Use this section for blog posts, product posts, and other non-reference material
 | Provider | Model / Scope | URL | First added | Last checked | Status |
 |----------|--------------|-----|-------------|--------------|--------|
 | Google | Community tips source - Nano Banana Pro prompting tips (Google blog) | <https://blog.google/products-and-platforms/products/gemini/prompting-tips-nano-banana-pro/> | 2026-04 | 2026-04 | active |
+| Google | Gemini 3.8 Flash Prompting Guidance & Mental Model | <https://promptessor.com/> | 2026-09 | 2026-09 | active |
+| Community | LLM-Sensible-Default-Instructions (martinderm) | <https://github.com/martinderm/LLM-Sensible-Default-Instructions> | 2026-09 | 2026-09 | active |
 
 ## Notes
 

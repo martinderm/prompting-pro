@@ -27,6 +27,7 @@ tips/               ← unofficial / community tips
     gpt-5.4.md       ← GPT-5.4 family community tips (incl. mini/nano notes)
     gpt-5.3-codex.md ← GPT-5.3-Codex community tips
   google/
+    gemini-3.md      ← Gemini 3 family & 3.8 Flash community tips (incl. Sensible Defaults)
     nano-banana.md   ← Nano Banana community tips
 ```
 

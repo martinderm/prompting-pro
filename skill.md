@@ -30,7 +30,7 @@ For maintenance or discovery requests, see [knowledge/maintenance-requests.md](k
 | GPT-5.5 | [docs/openai/gpt-5.5.md](docs/openai/gpt-5.5.md) | [tips/openai/gpt-5.5.md](tips/openai/gpt-5.5.md) |
 | GPT-5.4 | [docs/openai/gpt-5.4.md](docs/openai/gpt-5.4.md) | [tips/openai/gpt-5.4.md](tips/openai/gpt-5.4.md) |
 | GPT-5.3-Codex | [docs/openai/gpt-5.3-codex.md](docs/openai/gpt-5.3-codex.md) | [tips/openai/gpt-5.3-codex.md](tips/openai/gpt-5.3-codex.md) |
-| Gemini 3 | [docs/google/gemini-3.md](docs/google/gemini-3.md) | - |
+| Gemini 3 (incl. 3.8 Flash) | [docs/google/gemini-3.md](docs/google/gemini-3.md) | [tips/google/gemini-3.md](tips/google/gemini-3.md) |
 
 ## Specialized Overlays
 
