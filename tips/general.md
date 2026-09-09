@@ -186,4 +186,14 @@ Define when additional retrieval is justified and when current evidence is suffi
 
 ---
 
+## Baseline Defaults for Interactive Chat
+
+For interactive web chat apps (ChatGPT, Gemini Saved Info / Gems, Claude Projects), use a lightweight, anti-sycophantic baseline that enforces truth over agreement without heavy agent-harness overhead:
+- **Prioritize truth over polite agreement**: Challenge flawed assumptions clearly and neutrally.
+- **Search-engine-neutral grounding**: *"When an answer depends on up-to-date, external, or verifiable information, use search to verify facts, or state uncertainty."*
+- **Explicit confidence indicator**: Close uncertain responses with `Confidence: High / Medium / Low` + 1-sentence rationale.
+- Ready-to-use full and character-constrained (< 1,500 chars) templates are maintained in the companion repository: [LLM-Sensible-Default-Instructions](https://github.com/martinderm/LLM-Sensible-Default-Instructions).
+
+---
+
 Community source index: [knowledge/sources/openai.md](../knowledge/sources/openai.md#community-sources)

@@ -37,6 +37,10 @@ tips/               ← unofficial / community tips
 - **Tips**: add to the appropriate file in `tips/`, following the guide in [tips/README.md](tips/README.md).
 - **Knowledge updates**: when official docs change, update `knowledge/sources/<provider>.md` and the corresponding `docs/` file.
 
+## Related Projects
+
+- **[LLM-Sensible-Default-Instructions](https://github.com/martinderm/LLM-Sensible-Default-Instructions)**: Ready-to-use custom instructions for everyday chat applications (ChatGPT, Gemini Saved Info, Claude Projects), optimized for UI limits (< 1,500 chars), anti-sycophancy, and epistemic honesty.
+
 ## License
 
 [MIT](LICENSE)

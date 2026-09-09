@@ -27,13 +27,14 @@ Adapted from [LLM-Sensible-Default-Instructions](https://github.com/martinderm/L
 - **Explicit confidence closing:** On ambiguous, rapidly changing, or weakly evidenced topics, mandate a closing line:
   - `Confidence: High / Medium / Low` + 1-sentence rationale.
 
-### 2. UI-Specific Form Factor (Gemini vs. ChatGPT)
-- **ChatGPT:** Constrained by ~1,500 characters per custom instruction box -> use compressed, dense paragraphs (e.g. `condensed-instructions.md`).
-- **Gemini (Advanced / Custom Gems):** Supports up to 10,000 characters. Take advantage of this by using cleanly structured Markdown headings, bullet points, and explicit sections (`full-instructions.md`). Flash parses structured lists with higher fidelity than monolithic text blocks.
+### 2. UI-Specific Form Factor (Saved Info vs. Gems)
+- **ChatGPT & Gemini "Saved Info" / "Persönlicher Kontext":** Constrained by a ~1,500 character limit per entry -> use compressed, dense paragraphs (e.g. `condensed-instructions.md`).
+- **Gemini Custom Gems:** Supports up to 10,000 characters. Take advantage of this by using cleanly structured Markdown headings, bullet points, and explicit sections (`full-instructions.md`). Flash parses structured lists with higher fidelity than monolithic text blocks.
 
-### 3. Proactive Search Grounding Trigger
-To prevent hallucinations on current events or verifiable empirical facts, include an explicit tool-trigger constraint:
-> *"When an answer depends on up-to-date, external, or verifiable information, use Google Search to verify facts, or plainly state the uncertainty."*
+### 3. Search-Engine-Neutral Grounding Trigger
+To prevent hallucinations on current events or verifiable empirical facts across any platform (Gemini, ChatGPT, Claude), formulate search triggers in an engine-neutral way:
+> *"When an answer depends on up-to-date, external, or verifiable information, use search to verify facts before answering, or plainly state the uncertainty."*
+This phrasing triggers native search tools in Gemini (Google Search Grounding), ChatGPT (Web Search), and Claude without tying the prompt to a single provider.
 
 ---
 
