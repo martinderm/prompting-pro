@@ -27,6 +27,7 @@ Add a new `<provider>/` sub-directory when tips for a different provider are con
 | Specific to one model / version | `tips/<provider>/<model>.md` |
 | Specific to one provider but all their models | `tips/<provider>/general.md` |
 | Shared provider overlays (task class) | `tips/<provider>/<overlay>.md` |
+| Task-class overlay, model-agnostic | `tips/general.md` (dedicated section) |
 
 ## Overlay Registry
 
@@ -36,6 +37,7 @@ Use this list to quickly identify additional overlays that should be combined wi
 |---------|-------|-----------------|---------------|------|
 | OpenAI Codex Overlay | OpenAI coding models | coding, debugging, verification loops | model-specific OpenAI docs | [openai/codex.md](openai/codex.md) |
 | Nano Banana Image Overlay | `nano-banana` | image generation or editing | [../docs/google/nano-banana.md](../docs/google/nano-banana.md) | [google/nano-banana.md](google/nano-banana.md) |
+| Prototype Ideation Overlay | all models | vague idea -> scoped, testable prototype | model-specific docs | [general.md#idea-to-prototype-workflow](general.md#idea-to-prototype-workflow) |
 
 ## Contributing a Tip
 

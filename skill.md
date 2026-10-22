@@ -20,6 +20,8 @@ The skill can also operate in a lightweight maintenance mode: on request, it can
 
 Overlay routing rule: if an overlay applies, combine model doc + model tips + overlay.
 
+Idea-to-prototype rule: if the request starts from a vague idea ("I want to build X"), apply the Prototype Ideation Overlay first - it structures the intake sequence (S1-S5), then word the prompt from the distilled result.
+
 For maintenance or discovery requests, see [knowledge/maintenance-requests.md](knowledge/maintenance-requests.md).
 
 ## Supported Models
@@ -40,6 +42,7 @@ Use these as additional instruction layers for specific task classes.
 |---------|------------|----------|---------------|------|
 | OpenAI Codex Overlay | `gpt-5.6`, `gpt-5.5`, `gpt-5.4`, `gpt-5.4-mini`, `gpt-5.4-nano`, `gpt-5.3-codex` | coding, debugging, verification-heavy tasks | Model-specific docs from Supported Models | [tips/openai/codex.md](tips/openai/codex.md) |
 | Nano Banana Image Overlay | `gemini-3*` (via Nano Banana image capability) | image generation or editing tasks | [docs/google/nano-banana.md](docs/google/nano-banana.md) | [tips/google/nano-banana.md](tips/google/nano-banana.md) |
+| Prototype Ideation Overlay | all supported models | vague idea -> scoped, testable prototype | Model-specific docs from Supported Models | [tips/general.md#idea-to-prototype-workflow](tips/general.md#idea-to-prototype-workflow) |
 
 ### Mini variants
 

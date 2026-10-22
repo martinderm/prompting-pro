@@ -20,6 +20,7 @@ docs/               ← official prompt-guidance per model/version
     nano-banana.md   ← Nano Banana official guidance
 knowledge/          ← central registry of documentation sources (self-learning)
   sources.md        ← all tracked official docs with status & last-checked date
+  sources/          ← per-scope registries (openai, google, general)
 tips/               ← unofficial / community tips
   general.md        ← model-agnostic tips
   openai/

@@ -9,6 +9,7 @@ Store detailed source rows in `knowledge/sources/<provider>.md`.
 |----------|---------------|--------------|
 | OpenAI | [sources/openai.md](sources/openai.md) | 2026-04 |
 | Google | [sources/google.md](sources/google.md) | 2026-04 |
+| General (model-agnostic) | [sources/general.md](sources/general.md) | 2026-10 |
 
 ## Notes
 

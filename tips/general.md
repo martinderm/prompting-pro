@@ -196,4 +196,49 @@ For interactive web chat apps (ChatGPT, Gemini Saved Info / Gems, Claude Project
 
 ---
 
-Community source index: [knowledge/sources/openai.md](../knowledge/sources/openai.md#community-sources)
+## Idea-to-Prototype Workflow
+
+Applies when the request starts from a vague idea ("I want to build X") rather than a defined task. Model-agnostic. Stage 1 assumes dictation/voice intake is available; Stages 3 and 5 assume image input.
+
+Sources: [G1]
+
+Grounding:
+
+- [G1]: Practitioner workflow describing five recurring stages when turning an idea into a working prototype: dump-then-distil intake, AI-assisted prioritisation, communicating intent visually, testing the riskiest assumption first, and planning before parallel agent work.
+- Change applied: Recorded as a workflow with a per-stage acceptance criterion. The published prompts are examples and were generalised; they are not normative templates.
+
+### S1 - Intake: dump, don't compose
+
+Capture the idea raw - voice dictation, tangents, mid-sentence changes. The unedited version carries context that a polished version drops. Only then distil:
+
+```text
+Organize my thoughts: list the major themes, the most concise way to state each idea,
+and the deeper problem behind them.
+```
+
+Acceptance criterion: the user's own wording survives the distillation; nothing is dropped silently.
+
+### S2 - Prioritisation
+
+```text
+Based on my ideas, list what to build. Prioritize by high impact, low complexity,
+focused on solving the core problem.
+```
+
+The user keeps the decision. The model supplies ranking plus reasoning, and must accept pushback with context ("this matters because ...").
+
+### S3 - Show, don't name
+
+State audience, content and placement before asking for a build. Show sketches, screenshots or reference images instead of relying on layout jargon; when quoting a reference, name which parts to borrow. For image generation/editing, use `gemini-3*` with the Nano Banana Image Overlay.
+
+### S4 - Riskiest assumption first
+
+Before building, run the smallest test that can falsify the core assumption (does the machine even talk to the printer? can the app pull one real event?). Report failures without technical vocabulary: attach the wrong output and say *"I expected X, but this happened instead."*
+
+### S5 - Plan before parallel agents
+
+Produce one shared plan first, then dispatch subagents per separable workstream, then test the assembled result end to end yourself.
+
+---
+
+Community source index: [knowledge/sources/openai.md](../knowledge/sources/openai.md#community-sources) | [knowledge/sources/general.md](../knowledge/sources/general.md#community-sources)
