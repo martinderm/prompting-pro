@@ -18,9 +18,13 @@ docs/               ← official prompt-guidance per model/version
   google/
     gemini-3.md      ← Gemini 3 family official guidance
     nano-banana.md   ← Nano Banana official guidance
+  mistral/
+    mistral-large-4.md ← Mistral Large 4 official guidance
+    mistral-small-4.md ← Mistral Small 4 / Ministral 3 official guidance
+    codestral.md       ← Codestral official guidance
 knowledge/          ← central registry of documentation sources (self-learning)
   sources.md        ← all tracked official docs with status & last-checked date
-  sources/          ← per-scope registries (openai, google, general)
+  sources/          ← per-scope registries (openai, google, mistral, general)
 tips/               ← unofficial / community tips
   general.md        ← model-agnostic tips
   openai/

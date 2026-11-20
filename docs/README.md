@@ -12,6 +12,9 @@ Each file in this directory contains **official** prompt-guidance for a specific
 | OpenAI | GPT-5.3-Codex | [openai/gpt-5.3-codex.md](openai/gpt-5.3-codex.md) | [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex) |
 | Google | Gemini 3 family | [google/gemini-3.md](google/gemini-3.md) | [Gemini 3 guide](https://ai.google.dev/gemini-api/docs/gemini-3) |
 | Google | Nano Banana image family | [google/nano-banana.md](google/nano-banana.md) | [Gemini image generation guide](https://ai.google.dev/gemini-api/docs/image-generation) |
+| Mistral AI | Mistral Large 4 | [mistral/mistral-large-4.md](mistral/mistral-large-4.md) | [Large 4 model card](https://docs.mistral.ai/models/mistral-large-4-0) |
+| Mistral AI | Mistral Small 4 (incl. Ministral 3) | [mistral/mistral-small-4.md](mistral/mistral-small-4.md) | [Small 4 model card](https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03) |
+| Mistral AI | Codestral | [mistral/codestral.md](mistral/codestral.md) | [Codestral model card](https://docs.mistral.ai/models/codestral-25-08) |
 
 ## Conventions
 
