@@ -48,4 +48,5 @@ Use these compact references when citing community input in docs and tips.
 - **Status** values: `active` (content current), `outdated` (needs review), `archived` (model deprecated).
 - A source is considered **outdated** if it has not been checked within 90 days or if Mistral has published a newer version.
 - Other current families not yet covered by dedicated `docs/` files (OCR 4.1 `mistral-ocr-4-1`, Voxtral 3 audio family, Mistral Embed, Codestral Embed, Mistral Moderation 2 / Shieldstral 1.0, Timestral) are tracked via the [models overview](https://docs.mistral.ai/models).
+- Third-party models hosted on La Plateforme (`zai-glm-5-3`, `zai-glm-5-3-flash`, DeepSeek V4.1 Flash) are developed by their own vendors; the Z.ai GLM models are tracked in [zai.md](zai.md).
 - Deprecated lines to watch during maintenance: `mistral-medium-3-5` (retires 2027-04, alternative Large 4), `mistral-large-2512` (retires 2027-04, alternative Large 4), `devstral-2512` (retires 2027-07, alternative Medium 3.5), Magistral and Pixtral (retired; alternatives Small 4 / Medium 3.5 / Ministral 3 14B). See the deprecation table on the [models overview](https://docs.mistral.ai/models).

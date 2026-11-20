@@ -15,6 +15,8 @@ Each file in this directory contains **official** prompt-guidance for a specific
 | Mistral AI | Mistral Large 4 | [mistral/mistral-large-4.md](mistral/mistral-large-4.md) | [Large 4 model card](https://docs.mistral.ai/models/mistral-large-4-0) |
 | Mistral AI | Mistral Small 4 (incl. Ministral 3) | [mistral/mistral-small-4.md](mistral/mistral-small-4.md) | [Small 4 model card](https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03) |
 | Mistral AI | Codestral | [mistral/codestral.md](mistral/codestral.md) | [Codestral model card](https://docs.mistral.ai/models/codestral-25-08) |
+| Z.ai | GLM-5.3 | [zai/glm-5-3.md](zai/glm-5-3.md) | [GLM-5.3 model guide](https://docs.z.ai/guides/llm/glm-5.3) |
+| Z.ai | GLM-5.3-Flash | [zai/glm-5-3-flash.md](zai/glm-5-3-flash.md) | [GLM-5.3-Flash guide](https://docs.z.ai/guides/vlm/glm-5.3-flash) |
 
 ## Conventions
 

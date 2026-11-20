@@ -13,6 +13,7 @@ In practice, "self-learning" here means **self-updating on request**: the skill 
 | [sources/openai.md](sources/openai.md) | Official and community OpenAI documentation sources |
 | [sources/google.md](sources/google.md) | Official and community Google documentation sources |
 | [sources/mistral.md](sources/mistral.md) | Official and community Mistral AI documentation sources |
+| [sources/zai.md](sources/zai.md) | Official and community Z.ai (GLM) documentation sources |
 | [maintenance-requests.md](maintenance-requests.md) | Reusable self-learning request patterns and expected maintenance workflow |
 
 ## Workflow
