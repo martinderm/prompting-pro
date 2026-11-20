@@ -22,9 +22,12 @@ docs/               ← official prompt-guidance per model/version
     mistral-large-4.md ← Mistral Large 4 official guidance
     mistral-small-4.md ← Mistral Small 4 / Ministral 3 official guidance
     codestral.md       ← Codestral official guidance
+  zai/
+    glm-5-3.md         ← GLM-5.3 official guidance
+    glm-5-3-flash.md   ← GLM-5.3-Flash official guidance
 knowledge/          ← central registry of documentation sources (self-learning)
   sources.md        ← all tracked official docs with status & last-checked date
-  sources/          ← per-scope registries (openai, google, mistral, general)
+  sources/          ← per-scope registries (openai, google, mistral, zai, general)
 tips/               ← unofficial / community tips
   general.md        ← model-agnostic tips
   openai/
