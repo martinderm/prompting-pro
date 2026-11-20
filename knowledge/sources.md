@@ -11,6 +11,7 @@ Store detailed source rows in `knowledge/sources/<provider>.md`.
 | Google | [sources/google.md](sources/google.md) | 2026-04 |
 | Mistral AI | [sources/mistral.md](sources/mistral.md) | 2026-11 |
 | Z.ai | [sources/zai.md](sources/zai.md) | 2026-11 |
+| DeepSeek | [sources/deepseek.md](sources/deepseek.md) | 2026-11 |
 | General (model-agnostic) | [sources/general.md](sources/general.md) | 2026-10 |
 
 ## Notes

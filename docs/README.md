@@ -17,6 +17,7 @@ Each file in this directory contains **official** prompt-guidance for a specific
 | Mistral AI | Codestral | [mistral/codestral.md](mistral/codestral.md) | [Codestral model card](https://docs.mistral.ai/models/codestral-25-08) |
 | Z.ai | GLM-5.3 | [zai/glm-5-3.md](zai/glm-5-3.md) | [GLM-5.3 model guide](https://docs.z.ai/guides/llm/glm-5.3) |
 | Z.ai | GLM-5.3-Flash | [zai/glm-5-3-flash.md](zai/glm-5-3-flash.md) | [GLM-5.3-Flash guide](https://docs.z.ai/guides/vlm/glm-5.3-flash) |
+| DeepSeek | V4.1 Flash 1017 (`deepseek-flash`) | [deepseek/deepseek-v4-1-flash.md](deepseek/deepseek-v4-1-flash.md) | [Chat Completions API + Thinking Mode](https://api-docs.deepseek.com/guides/thinking_mode/) |
 
 ## Conventions
 
