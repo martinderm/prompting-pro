@@ -1,6 +1,6 @@
 ---
 name: prompting-pro
-description: Help formulate high-quality prompts for GPT-5.6, GPT-5.5, GPT-5.4, GPT-5.3-Codex, Gemini 3, and Nano Banana.
+description: Help formulate high-quality prompts for GPT-5.6, GPT-5.5, GPT-5.4, GPT-5.3-Codex, Gemini 3, Nano Banana, Mistral Large 4, Mistral Small 4, and Codestral.
 ---
 
 # Prompting Pro
@@ -13,7 +13,7 @@ The skill can also operate in a lightweight maintenance mode: on request, it can
 
 ## Usage
 
-1. **Identify the target or active model** (e.g. `gpt-5.6`, `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `gemini-3*`).
+1. **Identify the target or active model** (e.g. `gpt-5.6`, `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `gemini-3*`, `mistral-large-4`, `mistral-small-4`, `codestral`).
 2. **Read the relevant docs and tips** for that model (official reference doc, community tips) from supported models. If model is missing inform user.
 3. **Check specialized overlays** and add matching overlays for the task type.
 4. **Formulate the prompt** with model-specific constraints, output format, and stop rules.
@@ -33,6 +33,9 @@ For maintenance or discovery requests, see [knowledge/maintenance-requests.md](k
 | GPT-5.4 | [docs/openai/gpt-5.4.md](docs/openai/gpt-5.4.md) | [tips/openai/gpt-5.4.md](tips/openai/gpt-5.4.md) |
 | GPT-5.3-Codex | [docs/openai/gpt-5.3-codex.md](docs/openai/gpt-5.3-codex.md) | [tips/openai/gpt-5.3-codex.md](tips/openai/gpt-5.3-codex.md) |
 | Gemini 3 (incl. 3.8 Flash) | [docs/google/gemini-3.md](docs/google/gemini-3.md) | [tips/google/gemini-3.md](tips/google/gemini-3.md) |
+| Mistral Large 4 | [docs/mistral/mistral-large-4.md](docs/mistral/mistral-large-4.md) | - |
+| Mistral Small 4 (incl. Ministral 3) | [docs/mistral/mistral-small-4.md](docs/mistral/mistral-small-4.md) | - |
+| Codestral | [docs/mistral/codestral.md](docs/mistral/codestral.md) | - |
 
 ## Specialized Overlays
 
@@ -42,6 +45,7 @@ Use these as additional instruction layers for specific task classes.
 |---------|------------|----------|---------------|------|
 | OpenAI Codex Overlay | `gpt-5.6`, `gpt-5.5`, `gpt-5.4`, `gpt-5.4-mini`, `gpt-5.4-nano`, `gpt-5.3-codex` | coding, debugging, verification-heavy tasks | Model-specific docs from Supported Models | [tips/openai/codex.md](tips/openai/codex.md) |
 | Nano Banana Image Overlay | `gemini-3*` (via Nano Banana image capability) | image generation or editing tasks | [docs/google/nano-banana.md](docs/google/nano-banana.md) | [tips/google/nano-banana.md](tips/google/nano-banana.md) |
+| Mistral Coding Overlay (Vibe) | `mistral-large-4`, `mistral-small-4`, `codestral` | coding, debugging, agentic software tasks | [docs/mistral/codestral.md](docs/mistral/codestral.md) | - |
 | Prototype Ideation Overlay | all supported models | vague idea -> scoped, testable prototype | Model-specific docs from Supported Models | [tips/general.md#idea-to-prototype-workflow](tips/general.md#idea-to-prototype-workflow) |
 
 ### Mini variants
@@ -49,6 +53,7 @@ Use these as additional instruction layers for specific task classes.
 - `gpt-5.4-mini` and `gpt-5.4-nano` are considered operational variants of the GPT-5.4 family.
 - They are not documented as standalone models in this repository.
 - Use them for cost/latency-sensitive routing and keep prompt shape compatible with GPT-5.4 guidance.
+- Deprecated Mistral lines (Magistral, Devstral, Pixtral) and `mistral-medium-3-5` / `mistral-large-2512` are not documented as standalone models; their successors are Mistral Large 4, Mistral Small 4, and Ministral 3 - see the migration notes in [docs/mistral/mistral-small-4.md](docs/mistral/mistral-small-4.md) and [docs/mistral/mistral-large-4.md](docs/mistral/mistral-large-4.md).
 
 General tips that apply across all models: [tips/general.md](tips/general.md)
 
