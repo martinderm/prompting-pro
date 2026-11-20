@@ -25,9 +25,11 @@ docs/               ← official prompt-guidance per model/version
   zai/
     glm-5-3.md         ← GLM-5.3 official guidance
     glm-5-3-flash.md   ← GLM-5.3-Flash official guidance
+  deepseek/
+    deepseek-v4-1-flash.md ← DeepSeek V4.1 Flash 1017 official guidance
 knowledge/          ← central registry of documentation sources (self-learning)
   sources.md        ← all tracked official docs with status & last-checked date
-  sources/          ← per-scope registries (openai, google, mistral, zai, general)
+  sources/          ← per-scope registries (openai, google, mistral, zai, deepseek, general)
 tips/               ← unofficial / community tips
   general.md        ← model-agnostic tips
   openai/

@@ -1,6 +1,6 @@
 ---
 name: prompting-pro
-description: Help formulate high-quality prompts for GPT-5.6, GPT-5.5, GPT-5.4, GPT-5.3-Codex, Gemini 3, Nano Banana, Mistral Large 4, Mistral Small 4, Codestral, GLM 5.3, and GLM 5.3 Flash.
+description: Help formulate high-quality prompts for GPT-5.6, GPT-5.5, GPT-5.4, GPT-5.3-Codex, Gemini 3, Nano Banana, Mistral Large 4, Mistral Small 4, Codestral, GLM 5.3, GLM 5.3 Flash, and DeepSeek V4.1 Flash.
 ---
 
 # Prompting Pro
@@ -13,7 +13,7 @@ The skill can also operate in a lightweight maintenance mode: on request, it can
 
 ## Usage
 
-1. **Identify the target or active model** (e.g. `gpt-5.6`, `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `gemini-3*`, `mistral-large-4`, `mistral-small-4`, `codestral`, `glm-5.3`, `glm-5.3-flash`).
+1. **Identify the target or active model** (e.g. `gpt-5.6`, `gpt-5.5`, `gpt-5.4`, `gpt-5.3-codex`, `gemini-3`, `gemini-3*`, `mistral-large-4`, `mistral-small-4`, `codestral`, `glm-5.3`, `glm-5.3-flash`, `deepseek-flash`).
 2. **Read the relevant docs and tips** for that model (official reference doc, community tips) from supported models. If model is missing inform user.
 3. **Check specialized overlays** and add matching overlays for the task type.
 4. **Formulate the prompt** with model-specific constraints, output format, and stop rules.
@@ -38,6 +38,7 @@ For maintenance or discovery requests, see [knowledge/maintenance-requests.md](k
 | Codestral | [docs/mistral/codestral.md](docs/mistral/codestral.md) | - |
 | GLM 5.3 | [docs/zai/glm-5-3.md](docs/zai/glm-5-3.md) | - |
 | GLM 5.3 Flash | [docs/zai/glm-5-3-flash.md](docs/zai/glm-5-3-flash.md) | - |
+| DeepSeek V4.1 Flash (1017) | [docs/deepseek/deepseek-v4-1-flash.md](docs/deepseek/deepseek-v4-1-flash.md) | - |
 
 ## Specialized Overlays
 
@@ -49,6 +50,7 @@ Use these as additional instruction layers for specific task classes.
 | Nano Banana Image Overlay | `gemini-3*` (via Nano Banana image capability) | image generation or editing tasks | [docs/google/nano-banana.md](docs/google/nano-banana.md) | [tips/google/nano-banana.md](tips/google/nano-banana.md) |
 | Mistral Coding Overlay (Vibe) | `mistral-large-4`, `mistral-small-4`, `codestral` | coding, debugging, agentic software tasks | [docs/mistral/codestral.md](docs/mistral/codestral.md) | - |
 | GLM Coding/Agent Overlay | `glm-5.3`, `glm-5.3-flash` | coding, long-horizon agents, vision-driven tasks | [docs/zai/glm-5-3.md](docs/zai/glm-5-3.md) | - |
+| DeepSeek Coding/Agent Overlay | `deepseek-flash` (V4.1-Flash-1017), `vv4.1-flash-1017` on La Plateforme | long-context coding, agentic workflows | [docs/deepseek/deepseek-v4-1-flash.md](docs/deepseek/deepseek-v4-1-flash.md) | - |
 | Prototype Ideation Overlay | all supported models | vague idea -> scoped, testable prototype | Model-specific docs from Supported Models | [tips/general.md#idea-to-prototype-workflow](tips/general.md#idea-to-prototype-workflow) |
 
 ### Mini variants
@@ -58,6 +60,7 @@ Use these as additional instruction layers for specific task classes.
 - Use them for cost/latency-sensitive routing and keep prompt shape compatible with GPT-5.4 guidance.
 - Deprecated Mistral lines (Magistral, Devstral, Pixtral) and `mistral-medium-3-5` / `mistral-large-2512` are not documented as standalone models; their successors are Mistral Large 4, Mistral Small 4, and Ministral 3 - see the migration notes in [docs/mistral/mistral-small-4.md](docs/mistral/mistral-small-4.md) and [docs/mistral/mistral-large-4.md](docs/mistral/mistral-large-4.md).
 - `glm-5.3-flashx` (faster serving) and `glm-5.3-flashx-legal` (legal domain) are operational variants of GLM 5.3 Flash; prompt shape is compatible - see [docs/zai/glm-5-3-flash.md](docs/zai/glm-5-3-flash.md).
+- Retired DeepSeek API IDs (`deepseek-chat`, `deepseek-reasoner`, `deepseek-v4-flash`, `deepseek-v4-flash-vision-exp`) still route to V4.1-Flash-1017 but should not be used in new code; use `deepseek-flash` - see [docs/deepseek/deepseek-v4-1-flash.md](docs/deepseek/deepseek-v4-1-flash.md).
 
 General tips that apply across all models: [tips/general.md](tips/general.md)
 
